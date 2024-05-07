@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tea</string>
+    <string name="elapsed_time_default">00:00:00</string>
+    <string name="elapsed_time">%02d:%02d:%02d</string>
+    <string name="no_time_saved">저장된 시간이 없습니다.</string>
+    <string name="no_food_saved">저장된 음식 정보가 없습니다.</string>
+    <string name="enter_food_name">섭취하신 음식을 입력하세요.</string>
+    <string name="save">저장</string>
+</resources>

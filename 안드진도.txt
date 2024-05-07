@@ -1,0 +1,12 @@
+SharedPreference -> 파일에 저장, JWT 저장에 사용하기 좋음
+ViewModel 
+-> UI와 데이터 분리제공, MainThread와 WOrkerThread에서 모두 데이터 변경
+-> Activity의 Lifecycle을 참조하므로 메모리 누수 등에 안전
+ViewModel + LiveData + Coroutine 
+-> http 통신을 안정적이고 효율적으로 도와줌
+Permission
+-> internet : 일반 권한. 선언만 하면 사용가능
+-> location : 위험 권한. 사용자로부터 반드시 허용 받아야함
+위험권한(카메라 허용, gps허용)에 대해서는 사용자 동의를 받아야함
+
+  

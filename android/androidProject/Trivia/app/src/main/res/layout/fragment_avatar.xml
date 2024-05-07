@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AvatarFragment">
+
+    <ImageButton
+        android:id="@+id/buttonM1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:contentDescription="Man Icon 1"
+        android:scaleType="centerInside"
+        android:src="@drawable/m6"
+        app:layout_constraintEnd_toStartOf="@+id/buttonW1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComment" />
+    <ImageButton
+        android:id="@+id/buttonW1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:contentDescription="Woman Icon 1"
+        android:scaleType="centerInside"
+        android:src="@drawable/m1"
+        app:layout_constraintStart_toEndOf="@+id/buttonM1"
+        app:layout_constraintEnd_toStartOf="@+id/buttonM2"
+        app:layout_constraintTop_toTopOf="@+id/buttonM1" />
+    <ImageButton
+        android:id="@+id/buttonM2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:contentDescription="Man Icon 2"
+        android:scaleType="centerInside"
+        android:src="@drawable/m2"
+        app:layout_constraintStart_toEndOf="@+id/buttonW1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonM1" />
+
+    <ImageButton
+        android:id="@+id/buttonW2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:contentDescription="Woman Icon 2"
+        android:scaleType="centerInside"
+        android:src="@drawable/m3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonM3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonM1" />
+    <ImageButton
+        android:id="@+id/buttonM3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:contentDescription="Man Icon 3"
+        android:scaleType="centerInside"
+        android:src="@drawable/m4"
+        app:layout_constraintStart_toEndOf="@+id/buttonW2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonW3"
+        app:layout_constraintTop_toTopOf="@+id/buttonW2" />
+
+    <ImageButton
+        android:id="@+id/buttonW3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:contentDescription="Woman Icon 3"
+        android:scaleType="centerInside"
+        android:src="@drawable/m5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonM3"
+        app:layout_constraintTop_toTopOf="@+id/buttonW2" />
+
+    <TextView
+        android:id="@+id/textViewComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonW2" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="103dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonW2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
